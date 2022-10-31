@@ -1,0 +1,79 @@
+MYSQL SCHEMA
+
+
+
+USE epms;  
+
+DROP TABLE IF EXISTS employees; 
+
+CREATE TABLE epms.employees ( 
+
+id INT PRIMARY KEY  AUTO_INCREMENT, 
+
+emp_name VARCHAR(255), 
+ 
+date_of_joining DATE,
+
+gender VARCHAR(255),
+
+age INT,
+
+designation VARCHAR(255),
+
+email VARCHAR(255),
+
+password VARCHAR(255)
+
+);
+
+
+======================================================================
+
+
+INSERT INTO epms.employees(id,emp_name,date_of_joining,gender,age,designation,email,password) VALUES(1,'Tanmay','2021-12-16','male',24,'ASE','tanmay@gmail.com','12345678'); 
+
+INSERT INTO epms.employees(id,emp_name,date_of_joining,gender,age,designation,email,password) VALUES(2,'Ramesh','2021-11-14','male',27,'ASE','ramesh@gmail.com','87654321');  
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+H2 SCHEMA
+
+
+
+CREATE SCHEMA epms; 
+
+USE epms;
+
+CREATE TABLE epms.employees ( 
+
+id INT PRIMARY KEY  AUTO_INCREMENT, 
+
+emp_name VARCHAR(255), 
+ 
+date_of_joining DATE,
+
+gender VARCHAR(255),
+
+age INT,
+
+designation VARCHAR(255),
+
+email VARCHAR(255),
+
+password VARCHAR(255)
+
+); 
+
+
+==============================================================================
+INSERT INTO epms.employees(id,emp_name,date_of_joining,gender,age,designation,email,password) VALUES(1,'Tanmay','2021-12-16','male',24,'ASE','tanmay@gmail.com','12345678'); 
+
+INSERT INTO epms.employees(id,emp_name,date_of_joining,gender,age,designation,email,password) VALUES(2,'Ramesh','2021-11-14','male',27,'ASE','ramesh@gmail.com','87654321');  
+
+
+
+ 

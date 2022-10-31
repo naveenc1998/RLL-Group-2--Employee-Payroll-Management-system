@@ -1,0 +1,91 @@
+MYSQL SCHEMA
+----------------
+
+
+USE epms;  
+
+DROP TABLE IF EXISTS admin_leave; 
+
+CREATE TABLE epms.admin_leave ( 
+
+id INT PRIMARY KEY  AUTO_INCREMENT, 
+
+from_date VARCHAR(255), 
+ 
+to_date VARCHAR(255),
+
+leave_type VARCHAR(255),
+
+reason VARCHAR(255),
+
+status VARCHAR(255),
+
+empid  INT
+);
+==========================================================
+INSERT INTO epms.admin_leave(id, from_date, to_date,leave_type, reason,status,empid ) VALUES('09-09-1999','10-09-1999','op','wedding','not working',1); 
+
+INSERT INTO epms.admin_leave(id, from_date, to_date,leave_type, reason,status,empid ) VALUES('09-11-1992','10-11-1992','op','personal work','not working',2); 
+
+INSERT INTO epms.admin_leave(id, from_date, to_date,leave_type, reason,status,empid ) VALUES('15-10-1990','18-10-1990','sl','health issue','not working',3); 
+
+INSERT INTO epms.admin_leave(id, from_date, to_date,leave_type, reason,status,empid ) VALUES('11-09-1998','12-09-1998','cl','fever','not working',4); 
+
+
+
+
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+H2 Schema
+
+
+CREATE SCHEMA epms; 
+
+USE epms; 
+
+CREATE TABLE epms.admin_leave ( 
+
+id INT PRIMARY KEY  AUTO_INCREMENT, 
+
+from_date VARCHAR(255), 
+ 
+to_date VARCHAR(255),
+
+leave_type VARCHAR(255),
+
+reason VARCHAR(255),
+
+status VARCHAR(255),
+
+empid  INT
+
+); 
+
+====================================================================
+
+INSERT INTO epms.admin_leave(id, from_date, to_date,leave_type, reason,status,empid ) VALUES('09-09-1999','10-09-1999','op','wedding','not working',1); 
+
+INSERT INTO epms.admin_leave(id, from_date, to_date,leave_type, reason,status,empid ) VALUES('09-11-1992','10-11-1992','op','personal work','not working',2); 
+
+INSERT INTO epms.admin_leave(id, from_date, to_date,leave_type, reason,status,empid ) VALUES('15-10-1990','18-10-1990','sl','health issue','not working',3); 
+
+INSERT INTO epms.admin_leave(id, from_date, to_date,leave_type, reason,status,empid ) VALUES('11-09-1998','12-09-1998','cl','fever','not working',4); 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+

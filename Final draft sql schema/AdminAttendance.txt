@@ -1,0 +1,59 @@
+MYSQL SCHEMA
+
+USE emps;  
+
+DROP TABLE IF EXISTS admin_attendance ; 
+
+CREATE TABLE `admin_attendance` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+    `emp_name` varchar(255) DEFAULT NULL,
+      `email` varchar(255) DEFAULT NULL,
+  `date` DATE DEFAULT NULL,
+
+
+  `status` varchar(255) DEFAULT NULL,  
+ 
+ wsid INT
+);
+
+========================================================
+
+
+INSERT INTO `epms`.`admin_attendence` (`id`,`emp_name`,  `email`,'date',`status`, 'wsid') VALUES ('raskesh', 'rakesh@gmail.com', '2002-03-01', 'working',1);
+
+INSERT INTO `epms`.`admin_attendence` (`id`,`emp_name`,  `email`,'date',`status`, 'wsid') VALUES ('raj', 'raj@gmail.com', '2002-09-10', 'working',2);
+
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+H2 SCHEMA
+
+
+CREATE SCHEMA epms; 
+
+USE epms; 
+
+CREATE TABLE `admin_attendance` (
+ `id` INT NOT NULL AUTO_INCREMENT,
+    `emp_name` varchar(255) DEFAULT NULL,
+      `email` varchar(255) DEFAULT NULL,
+  `date` DATE DEFAULT NULL,
+
+
+  `status` varchar(255) DEFAULT NULL,  
+ 
+ wsid INT
+) 
+
+====================================================================================================================
+
+
+
+
+INSERT INTO `epms`.`admin_attendence` (`id`,`emp_name`,  `email`,'date',`status`, 'wsid') VALUES ('raskesh', 'rakesh@gmail.com', '2002-03-01', 'working',1);
+
+INSERT INTO `epms`.`admin_attendence` (`id`,`emp_name`,  `email`,'date',`status`, 'wsid') VALUES ('raj', 'raj@gmail.com', '2002-09-10', 'working',2);
+
